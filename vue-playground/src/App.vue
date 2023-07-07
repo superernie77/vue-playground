@@ -1,8 +1,8 @@
 <template>
   <h1>Food</h1>
-  <food-item/>
-  <food-item/>
-  <food-item/>
+  <food-item food-name="Apple" food-message="I like apples"/>
+  <food-item food-name="Banana" food-message="I like banana"/>
+  <food-item food-name="Cherry" food-message="Cherries are great"/>
 </template>
 
 <script></script>

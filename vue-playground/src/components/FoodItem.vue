@@ -1,12 +1,16 @@
 <template>
     <div>
-        <h2>{{ name }}</h2>
-        <p>{{ message }}</p>
+        <h2>{{ foodName }}</h2>
+        <p>{{ foodMessage }}</p>
     </div>
 </template>
   
 <script>
 export default {
+    props: [
+      'foodName',
+      'foodMessage'
+    ],
     data() {
         return {
             name: 'Apples',
