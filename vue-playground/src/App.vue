@@ -1,8 +1,8 @@
 <template>
   <h1>Food</h1>
-  <food-item food-name="Apple" food-message="I like apples"/>
-  <food-item food-name="Banana" food-message="I like banana"/>
-  <food-item food-name="Cherry" food-message="Cherries are great"/>
+  <food-item food-name="Apple" food-desc="I like apples" v-bind:is-favorite="false"/>
+  <food-item food-name="Banana" v-bind:is-favorite="false"/>
+  <food-item food-name="Cherry" food-desc="Cherries are great" v-bind:is-favorite="true"/>
 </template>
 
 <script></script>
