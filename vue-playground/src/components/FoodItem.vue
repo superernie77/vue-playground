@@ -30,6 +30,7 @@ export default {
   methods: {
     toggleFavorite() {
       this.foodIsFavorite = !this.foodIsFavorite;
+      this.$emit('toggle-Favorite', this.foodName);
     }
   }
 };
