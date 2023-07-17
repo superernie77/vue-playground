@@ -27,3 +27,7 @@ npm run dev
 ```sh
 npm run build
 ```
+### Check a preview of the production build artifact
+```sh
+npm run preview
+```
