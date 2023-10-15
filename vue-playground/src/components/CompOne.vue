@@ -6,7 +6,7 @@
         <div id="redDiv">Hello!</div>
       </Teleport>
     </div>
-  </template>
+</template>
 
 <script></script>
 
