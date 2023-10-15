@@ -9,8 +9,8 @@ import FormExample from'./components/FormExample.vue'
 import MessageExample from'./components/MessageExample.vue'
 
 // Routing Example Components
-import MessageExample from'./routingexample/FoodItems.vue'
-import MessageExample from'./routingexample/AnimalCollection.vue'
+import FoodItems from'./routingexample/FoodItems.vue'
+import AnimalCollection from'./routingexample/AnimalCollection.vue'
 
 const app = createApp(App)
 app.component('food-item', FoodItem);
