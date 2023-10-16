@@ -9,31 +9,15 @@
 
   <message-example message="new message" v-bind:show2ndMessage="true"/>-->
 
-  <!--<p>Choose what part of this page you want to see:</p>
-  <button @click="activeComp = 'animal-collection'">Animals</button>
-  <button @click="activeComp = 'food-items'">Food</button><br>
+  <p>Choose what part of this page you want to see:</p>
+  <router-link to="/animals">Animals</router-link>
+  <router-link to="/food">Food</router-link><br>
   <div>
-    <component :is="activeComp"></component>
-  </div>-->
-  <http-call/>
+    <router-view></router-view>
+  </div>
 </template>
 
-<script>
-//export default {
-//  methods: {
-//    receiveEmit(foodName) {
-//      alert('Hello '+ foodName);
-//    }
-//  }
-//};
-export default {
-  data() {
-      return {
-        activeComp: ''
-      }
-    }
-}
-</script>
+
 
 <!--<style>
 #app > div {
@@ -46,9 +30,17 @@ export default {
 </style>-->
 
 <style scoped>
-  button {
+  a {
+    display: inline-block;
+    background-color: black;
+    border: solid 1px black;
+    color: white;
     padding: 5px;
     margin: 10px;
+  }
+  a:hover,
+  a.router-link-active {
+    background-color: rgb(110, 79, 13);
   }
   div {
     border: dashed black 1px;
